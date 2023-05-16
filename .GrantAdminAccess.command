@@ -34,13 +34,13 @@ currentuser=$(/usr/bin/python -c 'from SystemConfiguration import SCDynamicStore
 currentUID=$(id -u "$currentuser")
 
 ## Copy removeAdminAccess.plist to ~/Library/LaunchAgents, ensure current user is owner, that permissions are rw-r-r, and then load agent
-cp /usr/local/.Privileges/Agents/.com.globeandmail.removeAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.removeAdminAccess.plist
-chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.removeAdminAccess.plist
-chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.removeAdminAccess.plist
+cp /usr/local/.Privileges/Agents/.com.nberanger.removeAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.removeAdminAccess.plist
+chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.removeAdminAccess.plist
+chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.removeAdminAccess.plist
 
 ## Load removeAdminAccess launch agent into system
-launchctl bootstrap gui/"$currentUID" /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.removeAdminAccess.plist
+launchctl bootstrap gui/"$currentUID" /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.removeAdminAccess.plist
 
-rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
+rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.grantAdminAccess.plist
 
 exit
