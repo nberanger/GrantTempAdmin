@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.globeandmail.grantAdminAccess</string>
+	<string>com.nberanger.grantAdminAccess</string>
 	<key>Program</key>
 	<string>/usr/local/.Privileges/Scripts/.GrantAdminAccess.command</string>
 	<key>RunAtLoad</key>
