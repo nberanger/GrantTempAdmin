@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.globeandmail.loginRemoveAdminAccess</string>
+	<string>com.nberanger.loginRemoveAdminAccess</string>
 	<key>Program</key>
 	<string>/usr/local/.Privileges/Scripts/.removeLoginAdminAccess.command</string>
 	<key>RunAtLoad</key>
