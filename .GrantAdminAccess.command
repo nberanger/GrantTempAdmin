@@ -34,7 +34,7 @@ currentuser=$(/usr/bin/python -c 'from SystemConfiguration import SCDynamicStore
 currentUID=$(id -u "$currentuser")
 
 ## Copy removeAdminAccess.plist to ~/Library/LaunchAgents, ensure current user is owner, that permissions are rw-r-r, and then load agent
-cp /usr/local/.Privileges/Agents/.com.nberanger.removeAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.removeAdminAccess.plist
+cp /usr/local/.Privileges/Agents/.com.nberanger.removeAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.removeAdminAccess.plist
 chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.removeAdminAccess.plist
 chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.removeAdminAccess.plist
 
