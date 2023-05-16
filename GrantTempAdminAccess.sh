@@ -23,19 +23,19 @@ mkdir -p /Users/"$currentuser"/Library/LaunchAgents
 chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/
 
 ## Copy plist files to the ~/Library/LaunchAgents/ folder, ensure current user is owner, and that permissions are rw-r-r
-cp /usr/local/.Privileges/Agents/.com.globeandmail.grantAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
-chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
-chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
+cp /usr/local/.Privileges/Agents/.com.nberanger.grantAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.grantAdminAccess.plist
+chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.grantAdminAccess.plist
+chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.grantAdminAccess.plist
 
-cp /usr/local/.Privileges/Agents/.com.globeandmail.loginRemoveAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.loginRemoveAdminAccess.plist
-chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.loginRemoveAdminAccess.plist
-chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.loginRemoveAdminAccess.plist
+cp /usr/local/.Privileges/Agents/.com.nberanger.loginRemoveAdminAccess.plist /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.loginRemoveAdminAccess.plist
+chown "$currentuser":staff /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.loginRemoveAdminAccess.plist
+chmod 644 /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.loginRemoveAdminAccess.plist
 
 echo "pausing for 2 seconds to ensure files have copied over"
 
 sleep 2
 
 ## Load grantAdminAccess launch agent to system
-launchctl bootstrap gui/"$currentUID" /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
+launchctl bootstrap gui/"$currentUID" /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.grantAdminAccess.plist
 
 exit
