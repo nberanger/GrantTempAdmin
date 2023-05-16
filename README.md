@@ -1,5 +1,5 @@
 # grantTempAdminAccess
-Leveraging rtrouton's Privileges app, this Jamf Self Service workflow will give user local admin access on their Mac for a limited amount of time.
+Leveraging rtrouton's SAP Privileges app, this Jamf Self Service workflow will give user local admin access on their Mac for a limited amount of time.
 
 Currently the time limit is set to 10 minutes. Admin access will be removed when either the time expires, or if the user logs out/reboots.
 
@@ -40,9 +40,9 @@ Creating your AdminPrivileges.pkg
 (I like to use Packages by WhiteBox: http://s.sudre.free.fr/Software/Packages/about.html)
 You will need to create a custom PKG, which will place these files into the following directories:
 - /Applications/Utilities/Privileges.app
-- /Usr/Local/.Privileges/Agents/.com.globeandmail.grantAdminAccess.plist
-- /Usr/Local/.Privileges/Agents/.com.globeandmail.loginRemoveAdminAccess.plist
-- /Usr/Local/.Privileges/Agents/.com.globeandmail.removeAdminAccess.plist
+- /Usr/Local/.Privileges/Agents/.com.nberanger.grantAdminAccess.plist
+- /Usr/Local/.Privileges/Agents/.com.nberanger.loginRemoveAdminAccess.plist
+- /Usr/Local/.Privileges/Agents/.com.nberanger.removeAdminAccess.plist
 - /Usr/Local/.Privileges/Scripts/.GrantAdminAccess.command
 - /Usr/Local/.Privileges/Scripts/.RemoveAdminAccess.command
 - /Usr/Local/.Privileges/Scripts/.removeLoginAdminAccess.command
