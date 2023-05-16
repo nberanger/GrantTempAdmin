@@ -23,14 +23,14 @@ currentuser=$(/usr/bin/python -c 'from SystemConfiguration import SCDynamicStore
 /Applications/Utilities/Privileges.app/Contents/Resources/PrivilegesCLI --remove
 
 ## Stop, remove, and delete grantAdminAccess Launchagent from system
-rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.grantAdminAccess.plist
-launchctl stop com.globeandmail.grantAdminAccess
-launchctl remove com.globeandmail.grantAdminAccess
+rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.grantAdminAccess.plist
+launchctl stop com.nberanger.grantAdminAccess
+launchctl remove com.nberanger.grantAdminAccess
 
 ## Stop, remove, and delete removeAdminAccess and logineRemoveAdminAccess Launchagents from system
-rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.logineRemoveAdminAccess.plist
-rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.globeandmail.removeAdminAccess.plist
-launchctl stop com.globeandmail.removeAdminAccess
-launchctl remove com.globeandmail.removeAdminAccess
+rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.logineRemoveAdminAccess.plist
+rm -rf /Users/"$currentuser"/Library/LaunchAgents/com.nberanger.removeAdminAccess.plist
+launchctl stop com.nberanger.removeAdminAccess
+launchctl remove com.nberanger.removeAdminAccess
 
 exit
