@@ -1,5 +1,5 @@
 # grantTempAdminAccess
-Leveraging rtrouton's SAP Privileges app, this Jamf Self Service workflow will give user local admin access on their Mac for a limited amount of time.
+Leveraging rtrouton's SAP Privileges app, this Jamf Self Service workflow will give a user local admin access on their Mac for a limited amount of time.
 
 Currently the time limit is set to 10 minutes. Admin access will be removed when either the time expires, or if the user logs out/reboots.
 
